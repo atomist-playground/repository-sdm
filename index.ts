@@ -1,11 +1,9 @@
 import {
     CompressingGoalCache,
     configure,
-} from "@atomist/sdm-core";
-import {
     hasRepositoryGoals,
-    RepositoryDrivenContainer,
-} from "@atomist/sdm-core/lib/goal/container/repositoryDrivenContainer";
+    repositoryDrivenContainer,
+} from "@atomist/sdm-core";
 import * as os from "os";
 import * as path from "path";
 
@@ -20,7 +18,7 @@ export const configuration = configure(async sdm => {
     return {
         plan: {
             test: hasRepositoryGoals,
-            goals: new RepositoryDrivenContainer(),
+            goals: repositoryDrivenContainer(),
         },
     };
 
