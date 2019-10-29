@@ -25,7 +25,7 @@
   "dependencies": {
     "@atomist/automation-client": "1.8.0-master.20191028235651",
     "@atomist/sdm": "1.8.0-dynamic-goals.20191023214836",
-    "@atomist/sdm-core": "1.8.0-dynamic-goals.20191028234354"
+    "@atomist/sdm-core": "1.8.0-dynamic-goals.20191029001341"
   },
   "devDependencies": {
     "@atomist/sdm-local": "^1.2.1",
